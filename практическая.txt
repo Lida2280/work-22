@@ -1,0 +1,84 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    cout << "[ 22 ] Самостоятельная работа | E" << endl;
+    cout << "Тема: [ ARRAY ]" << endl;
+    cout << "Работа с одномерными массивами" << endl;
+    cout << "----------------------------------------" << endl << endl;
+    
+    // 1. Массив INT
+    int arrInt[10] = { 1, 20, 32, 4, 1, 2, 2, 54, 23, 0 };
+    cout << "[ + ] Массив INT:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << "[ + ] arrInt [ " << i << " ]\t| значение: " << arrInt[i] << endl;
+    }
+    cout << endl;
+    
+    // 2. Массив SHORT
+    short arrShort[10] = { 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 };
+    cout << "[ + ] Массив SHORT:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << "[ + ] arrShort [ " << i << " ]\t| значение: " << arrShort[i] << endl;
+    }
+    cout << endl;
+    
+    // 3. Массив LONG
+    long arrLong[10] = { 100000L, 200000L, 300000L, 400000L, 500000L, 
+                         600000L, 700000L, 800000L, 900000L, 1000000L };
+    cout << "[ + ] Массив LONG:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << "[ + ] arrLong [ " << i << " ]\t| значение: " << arrLong[i] << endl;
+    }
+    cout << endl;
+    
+    // 4. Массив FLOAT
+    float arrFloat[10] = { 1.5f, 2.75f, 3.14f, 4.99f, 5.01f, 
+                          6.66f, 7.77f, 8.88f, 9.99f, 10.10f };
+    cout << "[ + ] Массив FLOAT:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << fixed << setprecision(2);
+        cout << "[ + ] arrFloat [ " << i << " ]\t| значение: " << arrFloat[i] << endl;
+    }
+    cout << endl;
+    
+    // 5. Массив DOUBLE
+    double arrDouble[10] = { 1.12345, 2.23456, 3.34567, 4.45678, 5.56789,
+                            6.67890, 7.78901, 8.89012, 9.90123, 10.01234 };
+    cout << "[ + ] Массив DOUBLE:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << fixed << setprecision(5);
+        cout << "[ + ] arrDouble [ " << i << " ]\t| значение: " << arrDouble[i] << endl;
+    }
+    cout << endl;
+    
+    // 6. Массив CHAR
+    char arrChar[10] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J' };
+    cout << "[ + ] Массив CHAR:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << "[ + ] arrChar [ " << i << " ]\t| значение: " << arrChar[i] << endl;
+    }
+    cout << endl;
+    
+    // 7. Массив BOOL
+    bool arrBool[10] = { true, false, true, false, true, false, true, false, true, false };
+    cout << "[ + ] Массив BOOL:" << endl;
+    for (int i = 0; i < 10; i++) {
+        // Выводим как true/false вместо 1/0
+        cout << "[ + ] arrBool [ " << i << " ]\t| значение: " 
+             << (arrBool[i] ? "true" : "false") << endl;
+    }
+    cout << endl;
+    
+    // 8. Массив STRING (массив строк в C++)
+    string arrString[10] = { "Hello", "World", "C++", "Programming", "Array",
+                            "String", "Example", "Test", "Data", "Structure" };
+    cout << "[ + ] Массив STRING:" << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << "[ + ] arrString [ " << i << " ]\t| значение: " << arrString[i] << endl;
+    }
+    
+    return 0;
+}
